@@ -1,0 +1,178 @@
+body {
+    margin: 10;
+    padding: 50px;
+    background: linear-gradient(300deg, #b30000, #000); 
+    font-family: 'Arial', sans-serif;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+header {
+    text-align: center;
+    padding: 50px;
+    width: 140%;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+/* Napit */
+.napit {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.nappi {
+    background-color: #b30000;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.nappi:hover {
+    background-color: #990000;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); 
+}
+
+
+.nakyma {
+    display: none; 
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    padding: 30px;
+}
+
+.nakyma.aktiivinen {
+    display: block;
+    opacity: 1;
+}
+
+.nakyma img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.nakyma img:hover {
+    transform: scale(0.80); 
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+footer {
+    background-color: #e7e7e7;
+    padding: 100px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 20px; 
+    }
+
+    header h1 {
+        font-size: 5rem; 
+    }
+
+    .nappi {
+        font-size: 1.8rem;
+        padding: 25px 35px; 
+    }
+
+    .nakyma img {
+        max-width: 80%; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header h1 {
+        font-size: 3rem; 
+    }
+
+    .nappi {
+        font-size: 1.2rem; 
+        padding: 15px 25px; 
+    }
+
+    .nakyma img {
+        max-width: 70%; 
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    height: 100%;
+}
+
+.nakyma img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;  
+}
+
+
+.nakyma p {
+    font-size: 1.2rem;
+    line-height: 12;
+    margin-top: 20px; 
+}
+
+
+/* TIETOJA MINUSTA GIFF */
+.gif {
+    max-width: 100%;  
+    height: auto;    
+    border-radius: 15px; /
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);  
+    margin-bottom: 30px; 
+}
+
+
