@@ -2,15 +2,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;  /* Poistaa vaakasuoran vierityspalkin */
-    height: 100%;  /* Varmistaa, että kehon korkeus kattaa koko näytön */
+    overflow-x: hidden;
+    height: 100%;
 }
 
-/* Taustaväri ja asettelu */
 body {
     margin: 10px;
     padding: 50px;
-    background: linear-gradient(300deg, #b30000, #000); /* Punainen-gradiendi tausta */
+    background: linear-gradient(300deg, #b30000, #000);
     font-family: 'Arial', sans-serif;
     color: rgb(0, 0, 0);
     height: 100vh;
@@ -25,7 +24,7 @@ body {
 header {
     text-align: center;
     padding: 50px;
-    width: 140%;  /* Leventää headeriä hieman */
+    width: 140%;
     margin-bottom: 50px;
 }
 
@@ -77,6 +76,16 @@ header h1 {
     opacity: 1;
 }
 
+/* Fade-in animaatio */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Kuvien tyylit */
 .nakyma img {
     max-width: 80%;
@@ -90,16 +99,6 @@ header h1 {
     transform: scale(0.80);
 }
 
-/* Fade-in animaatio */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* Footer tyylit */
 footer {
     background-color: #e7e7e7;
@@ -110,65 +109,4 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-}
-
-/* Responsiiviset tyylit */
-
-@media (min-width: 1920px) {
-    body {
-        font-size: 20px;
-    }
-
-    header h1 {
-        font-size: 5rem;
-    }
-
-    .nappi {
-        font-size: 1.8rem;
-        padding: 25px 35px;
-    }
-
-    .nakyma img {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-
-    header h1 {
-        font-size: 3rem;
-    }
-
-    .nappi {
-        font-size: 1.2rem;
-        padding: 15px 25px;
-    }
-
-    .nakyma img {
-        max-width: 70%;
-    }
-}
-
-/* GIF-tyylit */
-.gif {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
-}
-
-/* Tekstin tyylit osioissa */
-.nakyma p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-top: 20px;
-}
-
-/* Kuvan pienentäminen hover-tilassa */
-.nakyma img:hover {
-    transform: scale(0.80);
 }
