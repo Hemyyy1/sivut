@@ -99,14 +99,4 @@ header h1 {
     transform: scale(0.80);
 }
 
-/* Footer tyylit */
-footer {
-    background-color: #e7e7e7;
-    padding: 100px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
+
